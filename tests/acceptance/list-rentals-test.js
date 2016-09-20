@@ -18,7 +18,7 @@ test('should list available rentals.', function (assert) {
 });
 
 test('should link to information about the company.', function (assert) {
-	visit('/');
+  visit('/');
   click('a:contains("About")');
   andThen(function () {
     assert.equal(currentURL(), '/about', 'should navigate to about');
