@@ -58,7 +58,7 @@ test('should filter the list of rentals by city.', function (assert) {
 });
 
 test('should show details for a specific rental', function (assert) {
-	visit('/rentals');
+  visit('/rentals');
   click('a:contains("Grand Old Mansion")');
   andThen(function() {
     assert.equal(currentURL(), '/rentals/grand-old-mansion', "should navigate to show route");
